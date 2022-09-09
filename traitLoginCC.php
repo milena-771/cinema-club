@@ -27,10 +27,10 @@
         $_SESSION[idUtilisateur]=$idUtilisateur;
 
 
-        header ("Location: filPosts.php");
+        header ("Location: http://localhost:8888/app_cine/filPosts.php");
 
     }else{
-      header ("Location: loginCC.php");
+      header ("Location: http://localhost:8888/app_cine/loginCC.php");
     }
   }
 
