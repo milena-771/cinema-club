@@ -6,10 +6,10 @@
 
   mysqli_select_db($connexionBD,"base_club_cinema") or die ("La base n’a pas pu etre selectionnee");
 
-  if (isset($_POST['login']) && isset($_POST['mdp']) && !empty($_POST['login']) && !empty($_POST['mdp'])) {
+  if (isset($_GET['login']) && isset($_GET['mdp']) && !empty($_GET['login']) && !empty($_GET['mdp'])) {
 
-    $login = $_POST['login'];
-    $leMdp = $_POST['mdp'];
+    $login = $_GET['login'];
+    $leMdp = $_GET['mdp'];
 
     $requeteSQL = "SELECT prenom_utilisateur, statut_utilisateur, id_utilisateur FROM t_utilisateur WHERE `login_utilisateur`='$login' AND `mdp_utilisateur`='$leMdp'";
 
