@@ -1,0 +1,138 @@
+/* nunito-500 - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/nunito-v25-latin-500.eot'); /* IE9 Compat Modes */
+  src: url('fonts/nunito-v25-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/nunito-v25-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/nunito-v25-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('fonts/nunito-v25-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/nunito-v25-latin-500.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+
+
+/* source-code-pro-regular - latin*/
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/source-code-pro-v22-latin-regular.eot');
+  src: url('fonts/source-code-pro-v22-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/source-code-pro-v22-latin-regular.woff2') format('woff2'),
+       url('fonts/source-code-pro-v22-latin-regular.woff') format('woff'),
+       url('fonts/source-code-pro-v22-latin-regular.ttf') format('truetype'),
+       url('fonts/source-code-pro-v22-latin-regular.svg#SourceCodePro') format('svg');
+}
+
+
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  padding-top: 100px;
+  background-color: #f5f5f5;
+}
+
+h1{
+  font-family:'Dosis', sans-serif;
+  text-shadow:3px,2px,4px,black;
+  text-align:center;
+}
+
+.nav-item{
+  display:flex;
+  min-width:80px;
+  margin-right:14px;
+}
+
+.nav-item input[type="submit"]{
+  color: #6c757d;
+}
+
+.nav-item input[type="submit"]:hover{
+  font-weight:bold;
+  color:#f5f5f5;
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 85px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  .nav-item input[type="submit"] {
+    background-color: #343a40;
+    border:hidden;
+  }
+}
+
+.nav-scroller .nav {
+  color: rgba(255, 255, 255, .75);
+}
+
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: #6c757d;
+}
+
+.nav-scroller .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-scroller .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.datePost{
+  color:rgba(0,50,50,0.5);
+  font-size:12px;
+  font-style:italic;
+}
+
+.lienAmi {
+  color:SlateBlue;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.lienFilm{
+  color:SeaGreen;
+  text-decoration:none;
+  font-weight:bold;
+
+}
+
+[class^="lien"]:hover{
+  color:black;
+}
+
+.textPost{
+  text-align:justify;
+  text-indent:50px;
+  font-size:17px;
+  font-family:'Source Code Pro', monospace;
+}
+
+button[type="submit"]:hover{
+  background-color: rgba(10,30,30,0.2);
+}
